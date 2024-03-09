@@ -40,7 +40,7 @@ app.get("/cines", (req, res) => {
   });
 });
 app.post("/cines", (req, res) => {
-  const { nombre, encuentra, coordenadas, direccion, imagen, llegar, mapa, paginaweb, peliculas, sesiones, telefono, valoracion } = req.body;
+  const { nombre, direccion } = req.body;
 
   fs.readFile("db.json", "utf8", (err, data) => {
     if (err) {
@@ -57,17 +57,7 @@ app.post("/cines", (req, res) => {
     const newCine = {
       id: maxId + 1,
       nombre,
-      encuentra,
-      coordenadas,
-      direccion,
-      imagen,
-      llegar,
-      mapa,
-      paginaweb,
-      peliculas,
-      sesiones,
-      telefono,
-      valoracion
+      direccion
     }
 
     jsonData.cines.push(newCine);
@@ -78,7 +68,7 @@ app.post("/cines", (req, res) => {
         res.status(500).send("Internal Server Error");
         return;
       }
-      res.status(201).json(nuevoUsuario);
+      res.status(201).json(newCine);
     });
   });
 });
@@ -103,7 +93,7 @@ app.delete("/cines/:id", (req, res) => {
 
     jsonData.cines.splice(cineIndex, 1);
     
-    json.cines = jsonData.cines.map((cine, index) => {
+    jsonData.cines = jsonData.cines.map((cine, index) => {
       return { ...cine, id: index + 1 };
     });
 
