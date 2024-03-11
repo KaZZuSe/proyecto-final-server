@@ -1,56 +1,34 @@
-# En esta rama se ha agregado una db mongo en lugar de un local.json, en la parte de abajo del fichero server.js hay una serie de códigos comentados, ambas alternativas permiten levantar el servidor con MongoDB en lugar de usar un json local
-Se debe instalar la dependencia:
-npm install mongodb
+# ProyectoFinalServidor
 
 
-# Node.js Server for Angular Storefront - Crash Course
+## Node.js 
 
-This server provides the backend functionality for the Angular frontend, allowing users to perform CRUD (Create, Read, Update, Delete) operations on products. The server utilizes Express and interacts with a JSON file to manage product data.
+Este servidor proporciona la funcionalidad de backend para el frontend de Angular, lo que permite realizar operaciones de eliminar y añadir elementos. El servidor utiliza Express e interactúa con un archivo JSON para gestionar los datos del producto.
 
-## Table of Contents
+## Clonar directorio
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+```bash
+git clone https://github.com/KaZZuSe/proyecto-final-server.git
+```
 
-## Features
+## Mover directorio
 
-- **Express Server:** The server is built with Express, providing a robust and scalable backend.
-- **CRUD Operations:** Supports Create, Read, Update, and Delete operations on product data.
-- **JSON Data Storage:** Products are stored and manipulated within a JSON file instead of a traditional database.
+```bash
+cd .\proyecto-final-server
+```
 
-## Getting Started
+## Instalación
 
-### Prerequisites
+```bash
+npm install
+```
 
-Before you begin, ensure you have the following installed:
+## Ejecutar servidor
 
-- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
+```bash
+node .\server.js
+```
 
-### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/thecodedeck/angular-cc-1-server.git
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
 
-## Usage
 
-1. Run the server:
-   ```bash
-   npm start
-   ```
-2. The server will be running on http://localhost:3000/.
-
-3. The Angular frontend will interact with these API endpoints to perform CRUD operations on products.
-
-## License
-
-This project is licensed under the MIT License.
