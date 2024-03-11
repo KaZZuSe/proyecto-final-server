@@ -1,1 +1,29 @@
-{"cines":[{"id":1,"nombre":"Callao","direccion":"Plaza Callao, 3, 28013 Madrid"},{"id":2,"nombre":"Legánés","direccion":"Av. Gran Bretaña, s/n, 28916 Leganés, Madrid"},{"id":3,"nombre":"Príncipe Piso","direccion":"Estación Príncipe Pío, Centro Comercial Príncipe Pío, Paseo de la Florida, 2, 28008 Madrid"},{"id":4,"nombre":"San Martín","direccion":"Av. San Martín de Valdeiglesias, 24, 28922 Alcorcón, Madrid"},{"id":5,"nombre":"Cuadernillos","direccion":"Alcalá"}]}
+{
+    "cines": [
+        {
+            "id": 1,
+            "nombre": "Callao",
+            "direccion": "Plaza Callao, 3, 28013 Madrid"
+        },
+        {
+            "id": 2,
+            "nombre": "Legánés",
+            "direccion": "Av. Gran Bretaña, s/n, 28916 Leganés, Madrid"
+        },
+        {
+            "id": 3,
+            "nombre": "Príncipe Pio",
+            "direccion": "Estación Príncipe Pío, Centro Comercial Príncipe Pío, Paseo de la Florida, 2, 28008 Madrid"
+        },
+        {
+            "id": 4,
+            "nombre": "San Martín",
+            "direccion": "Av. San Martín de Valdeiglesias, 24, 28922 Alcorcón, Madrid"
+        },
+        {
+            "id": 5,
+            "nombre": "Ferial",
+            "direccion": "Guadalajara"
+        }
+    ]
+}
